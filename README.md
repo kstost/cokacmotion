@@ -1,10 +1,10 @@
 # aimotion
 
-웹 기술로 그래픽 영상을 표현하는 방법을 **기법 하나당 짧은 데모 하나**로 구현한 모음이다. 데모 146편, 11개 분류.
+웹 기술로 그래픽 영상을 표현하는 방법을 **기법 하나당 짧은 데모 하나**로 구현한 모음이다. 데모 166편, 12개 분류.
 영상을 만드는 AI 에이전트가 표현 기법과 기술적 내용을 배우도록 Claude Code 스킬로 묶었다.
 스킬 안에 데모마다 구현 노트(NOTES.md), 소스, 그림이 모두 들어 있어 네트워크 없이 쓴다.
 
-> A Claude Code skill: 146 short web-graphics demos, one technique each, with implementation notes, full source and stills — for agents that make videos.
+> A Claude Code skill: 166 short web-graphics demos, one technique each, with implementation notes, full source and stills — for agents that make videos.
 
 ## 설치
 
@@ -268,9 +268,9 @@ CSS @keyframes, SVG SMIL, 스크롤 기반 애니메이션
 </tr>
 </table>
 
-### 영상 표현력 · 17편
+### 영상 표현력 · 27편
 
-표정 리그·립싱크, 임팩트, 장면 전환, 멀티플레인·사진 시차, 스케일 줌, 시선 유도, 시간 재매핑, 색 보정, 전후 비교 — 짧은 영상의 연출 장치
+표정 리그·립싱크, 임팩트, 장면 전환, 멀티플레인·사진 시차, 스케일 줌, 시선 유도, 시간 재매핑, 색 보정, 전후 비교, 웹툰 칸, 팝아웃 착시, 화면비, 타임랩스, 데이터모시, 재조명, 1인칭 시점, 숏 문법, 스미어 작화, 불릿 타임 — 짧은 영상의 연출 장치
 
 <table>
 <tr>
@@ -297,6 +297,20 @@ CSS @keyframes, SVG SMIL, 스크롤 기반 애니메이션
 <tr>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/134-lip-sync/NOTES.md"><img src="skills/aimotion/demos/134-lip-sync/out/poster.jpg" width="140" alt="134 아침 라디오"></a><br><a href="skills/aimotion/demos/134-lip-sync/NOTES.md"><b>134</b> 아침 라디오</a><br><sub>립싱크 · 한글 자모 → 입 모양 + 조음 결합</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/136-color-grade/NOTES.md"><img src="skills/aimotion/demos/136-color-grade/out/poster.jpg" width="140" alt="136 같은 골목, 세 개의 기억"></a><br><a href="skills/aimotion/demos/136-color-grade/NOTES.md"><b>136</b> 같은 골목, 세 개의 기억</a><br><sub>컬러 그레이딩 · 3D LUT + 낮을 밤으로</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/157-webtoon-panels/NOTES.md"><img src="skills/aimotion/demos/157-webtoon-panels/out/poster.jpg" width="140" alt="157 칸 너머로 점프"></a><br><a href="skills/aimotion/demos/157-webtoon-panels/NOTES.md"><b>157</b> 칸 너머로 점프</a><br><sub>웹툰 칸 연출 · 스크롤이 곧 시간 + 칸 사이 여백 + 칸 깨기</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/158-pop-out/NOTES.md"><img src="skills/aimotion/demos/158-pop-out/out/poster.jpg" width="140" alt="158 액자를 넘은 고래"></a><br><a href="skills/aimotion/demos/158-pop-out/NOTES.md"><b>158</b> 액자를 넘은 고래</a><br><sub>팝아웃 착시 · 깊이 기준 막대 + 피사체 매트 + 액자 밖 그림자</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/159-aspect-ratio/NOTES.md"><img src="skills/aimotion/demos/159-aspect-ratio/out/poster.jpg" width="140" alt="159 기차가 닿는 곳"></a><br><a href="skills/aimotion/demos/159-aspect-ratio/NOTES.md"><b>159</b> 기차가 닿는 곳</a><br><sub>화면비 연출 · 레터박스 → 4:3 회상 → 전체 화면이 열리는 순간</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/160-time-lapse/NOTES.md"><img src="skills/aimotion/demos/160-time-lapse/out/poster.jpg" width="140" alt="160 창밖의 하루"></a><br><a href="skills/aimotion/demos/160-time-lapse/NOTES.md"><b>160</b> 창밖의 하루</a><br><sub>타임랩스 · 시간 압축 + 셔터 누적(빛 궤적·별 궤적·흐린 행인)</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/161-datamosh/NOTES.md"><img src="skills/aimotion/demos/161-datamosh/out/poster.jpg" width="140" alt="161 녹아내리는 컷"></a><br><a href="skills/aimotion/demos/161-datamosh/NOTES.md"><b>161</b> 녹아내리는 컷</a><br><sub>데이터모시 · 키프레임을 빼면 움직임 벡터가 앞 장면을 끌고 간다</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/162-relight/NOTES.md"><img src="skills/aimotion/demos/162-relight/out/poster.jpg" width="140" alt="162 성냥 하나의 방"></a><br><a href="skills/aimotion/demos/162-relight/NOTES.md"><b>162</b> 성냥 하나의 방</a><br><sub>평면 그림 재조명 · 높이맵 노멀 + 화면 공간 그림자 + 빛 색온도</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/163-pov-wakeup/NOTES.md"><img src="skills/aimotion/demos/163-pov-wakeup/out/poster.jpg" width="140" alt="163 눈 뜨는 아침"></a><br><a href="skills/aimotion/demos/163-pov-wakeup/NOTES.md"><b>163</b> 눈 뜨는 아침</a><br><sub>1인칭 시점 · 눈꺼풀 마스크 + 초점 맞춤 + 걸음 흔들림 + 노출 순응</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/164-shot-coverage/NOTES.md"><img src="skills/aimotion/demos/164-shot-coverage/out/poster.jpg" width="140" alt="164 마지막 한 조각"></a><br><a href="skills/aimotion/demos/164-shot-coverage/NOTES.md"><b>164</b> 마지막 한 조각</a><br><sub>숏 문법 · 한 무대 여러 카메라 + 180도 규칙 + 동작에서 자르기</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/165-smear-frames/NOTES.md"><img src="skills/aimotion/demos/165-smear-frames/out/poster.jpg" width="140" alt="165 도토리 낚아채기"></a><br><a href="skills/aimotion/demos/165-smear-frames/NOTES.md"><b>165</b> 도토리 낚아채기</a><br><sub>작화 연출 · 스미어 · 다중상 · 2프레임 찍기 + 타이밍 차트</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/166-bullet-time/NOTES.md"><img src="skills/aimotion/demos/166-bullet-time/out/poster.jpg" width="140" alt="166 물풍선이 멈춘 순간"></a><br><a href="skills/aimotion/demos/166-bullet-time/NOTES.md"><b>166</b> 물풍선이 멈춘 순간</a><br><sub>불릿 타임 · 장면 시간 τ(t)와 카메라 시간 분리 + 카메라 레일</sub></td>
 </tr>
 </table>
 
@@ -369,6 +383,27 @@ CSS @keyframes, SVG SMIL, 스크롤 기반 애니메이션
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/129-timeline/NOTES.md"><img src="skills/aimotion/demos/129-timeline/out/poster.jpg" width="140" alt="129 개업"></a><br><a href="skills/aimotion/demos/129-timeline/NOTES.md"><b>129</b> 개업</a><br><sub>타임라인 · 비선형 시간 축 + 카메라 추적 + 연도 카운터</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/130-quiz-countdown/NOTES.md"><img src="skills/aimotion/demos/130-quiz-countdown/out/poster.jpg" width="140" alt="130 다음 숫자는?"></a><br><a href="skills/aimotion/demos/130-quiz-countdown/NOTES.md"><b>130</b> 다음 숫자는?</a><br><sub>퀴즈 연출 · 카운트다운 링 + 긴장 리듬 + 정답 공개</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/135-chat-thread/NOTES.md"><img src="skills/aimotion/demos/135-chat-thread/out/poster.jpg" width="140" alt="135 오늘 저녁 뭐 먹지"></a><br><a href="skills/aimotion/demos/135-chat-thread/NOTES.md"><b>135</b> 오늘 저녁 뭐 먹지</a><br><sub>메신저 대화 장면 · 말풍선 레이아웃 + 스프링 스크롤 + 입력 중 표시</sub></td>
+</tr>
+</table>
+
+### 3D 장면 · 10편
+
+제품 턴테이블, 분해도, 툰 셰이딩, 3D 캐릭터 리그, 틸트시프트 미니어처, 점구름 스캔, 입자 디졸브, 도미노 연쇄, 볼류메트릭 빛, 지구본 경로 — three.js로 짓는 3D 장면의 조명·재질·카메라·물리
+
+<table>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/147-product-turntable/NOTES.md"><img src="skills/aimotion/demos/147-product-turntable/out/poster.jpg" width="140" alt="147 실리콘 패킹"></a><br><a href="skills/aimotion/demos/147-product-turntable/NOTES.md"><b>147</b> 실리콘 패킹</a><br><sub>제품 턴테이블 샷 · 3점 조명 + PBR 재질 + 접지 그림자</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/148-exploded-view/NOTES.md"><img src="skills/aimotion/demos/148-exploded-view/out/poster.jpg" width="140" alt="148 손전등 속을 들여다보면"></a><br><a href="skills/aimotion/demos/148-exploded-view/NOTES.md"><b>148</b> 손전등 속을 들여다보면</a><br><sub>분해도 · 부품 계층 + 분해 벡터 + 3D 설명선</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/149-toon-shading/NOTES.md"><img src="skills/aimotion/demos/149-toon-shading/out/poster.jpg" width="140" alt="149 비 오는 정류장"></a><br><a href="skills/aimotion/demos/149-toon-shading/NOTES.md"><b>149</b> 비 오는 정류장</a><br><sub>툰 셰이딩 · 계단 명암 + 뒤집은 껍질 외곽선 + 림 라이트</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/150-character-rig/NOTES.md"><img src="skills/aimotion/demos/150-character-rig/out/poster.jpg" width="140" alt="150 안녕, 하고 손 흔들기"></a><br><a href="skills/aimotion/demos/150-character-rig/NOTES.md"><b>150</b> 안녕, 하고 손 흔들기</a><br><sub>3D 캐릭터 리그 · 코드로 짠 스키닝 + 걷기 주기 + 두 마디 IK</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/151-tilt-shift/NOTES.md"><img src="skills/aimotion/demos/151-tilt-shift/out/poster.jpg" width="140" alt="151 장난감 마을의 아침"></a><br><a href="skills/aimotion/demos/151-tilt-shift/NOTES.md"><b>151</b> 장난감 마을의 아침</a><br><sub>틸트시프트 미니어처 · 로우폴리 디오라마 + 피사계 심도 + 끊는 시간</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/152-point-cloud-scan/NOTES.md"><img src="skills/aimotion/demos/152-point-cloud-scan/out/poster.jpg" width="140" alt="152 돌 정자를 읽는 빛"></a><br><a href="skills/aimotion/demos/152-point-cloud-scan/NOTES.md"><b>152</b> 돌 정자를 읽는 빛</a><br><sub>점구름 3D 스캔 · 표면 표본 + 스캔 평면 + 점→선→면 굳기</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/153-particle-dissolve/NOTES.md"><img src="skills/aimotion/demos/153-particle-dissolve/out/poster.jpg" width="140" alt="153 흩어졌다 다시 피어나는"></a><br><a href="skills/aimotion/demos/153-particle-dissolve/NOTES.md"><b>153</b> 흩어졌다 다시 피어나는</a><br><sub>입자 디졸브 · 노이즈 임계값 + 발광 가장자리 + 표면 입자 흐름</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/154-domino-chain/NOTES.md"><img src="skills/aimotion/demos/154-domino-chain/out/poster.jpg" width="140" alt="154 넘어지며 쓰는 말"></a><br><a href="skills/aimotion/demos/154-domino-chain/NOTES.md"><b>154</b> 넘어지며 쓰는 말</a><br><sub>도미노 연쇄 · 경첩 회전 강체 + 충돌 전달 미리 굽기</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/155-volumetric-light/NOTES.md"><img src="skills/aimotion/demos/155-volumetric-light/out/poster.jpg" width="140" alt="155 창으로 지나가는 하루"></a><br><a href="skills/aimotion/demos/155-volumetric-light/NOTES.md"><b>155</b> 창으로 지나가는 하루</a><br><sub>볼류메트릭 빛 · 그림자 맵 광선 진행 + 먼지 입자 + 해 각도 타임랩스</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/156-globe-arcs/NOTES.md"><img src="skills/aimotion/demos/156-globe-arcs/out/poster.jpg" width="140" alt="156 철새의 길"></a><br><a href="skills/aimotion/demos/156-globe-arcs/NOTES.md"><b>156</b> 철새의 길</a><br><sub>3D 지구본 · 대기 빛 번짐 + 낮밤 경계 + 대권 호</sub></td>
 </tr>
 </table>
 

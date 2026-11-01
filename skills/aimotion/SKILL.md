@@ -1,12 +1,12 @@
 ---
 name: aimotion
-description: 웹 그래픽 표현 기법 참고서 aimotion — 기법 하나당 데모 하나, 데모 146편의 구현 노트와 소스와 그림이 이 스킬 안에 모두 들어 있다. 장면에 맞는 기법을 찾아 원리와 소스를 읽고 지금 만드는 영상에 옮긴다. Use when building or improving a motion-graphics or video scene that needs richer visual expression — ink, watercolor, paper, print or film looks; shaders (fBm, raymarching, caustics, SDF); particles; fluid, cloth or physics simulation; kinetic or expressive typography, captions, title stings, lower thirds, logo reveals, scene transitions, isometric explainers, mascots, route maps; GSAP, three.js, Canvas 2D, SVG or CSS animation techniques — or when asked for 표현력 향상, 그래픽 업그레이드, 더 멋진 효과, 연출·기법 참고. STRICT RULE: borrow only the technique (how an effect is built); never reuse what a demo depicts — its subject, scene, story, composition, text, colours or 9:16 format. Build the scene from the video's own script.
+description: 웹 그래픽 표현 기법 참고서 aimotion — 기법 하나당 데모 하나, 데모 166편의 구현 노트와 소스와 그림이 이 스킬 안에 모두 들어 있다. 장면에 맞는 기법을 찾아 원리와 소스를 읽고 지금 만드는 영상에 옮긴다. Use when building or improving a motion-graphics or video scene that needs richer visual expression — ink, watercolor, paper, print or film looks; shaders (fBm, raymarching, caustics, SDF); particles; fluid, cloth or physics simulation; kinetic or expressive typography, captions, title stings, lower thirds, logo reveals, scene transitions, isometric explainers, mascots, route maps; GSAP, three.js, Canvas 2D, SVG or CSS animation techniques — or when asked for 표현력 향상, 그래픽 업그레이드, 더 멋진 효과, 연출·기법 참고. STRICT RULE: borrow only the technique (how an effect is built); never reuse what a demo depicts — its subject, scene, story, composition, text, colours or 9:16 format. Build the scene from the video's own script.
 ---
 
 # aimotion — 표현 기법을 찾아 영상에 옮기기
 
 aimotion은 웹 기술로 그래픽 영상을 표현하는 방법을 기법 하나당 짧은 데모 하나로 구현한 모음이다.
-이 스킬 폴더에 데모 146편이 모두 들어 있다. 편마다 구현 노트(NOTES.md: 데모 장면, 기법과 원리와 `main.js:줄`, 결정성 전략, 한계), 소스, 그림이 있다.
+이 스킬 폴더에 데모 166편이 모두 들어 있다. 편마다 구현 노트(NOTES.md: 데모 장면, 기법과 원리와 `main.js:줄`, 결정성 전략, 한계), 소스, 그림이 있다.
 네트워크 없이 이 폴더의 파일만 읽으면 된다.
 
 ## 가장 중요한 규칙: 기술만 가져간다
