@@ -1,10 +1,10 @@
 # aimotion
 
-웹 기술로 그래픽 영상을 표현하는 방법을 **기법 하나당 짧은 데모 하나**로 구현한 모음이다. 데모 125편, 12개 분류.
+웹 기술로 그래픽 영상을 표현하는 방법을 **기법 하나당 짧은 데모 하나**로 구현한 모음이다. 데모 146편, 11개 분류.
 영상을 만드는 AI 에이전트가 표현 기법과 기술적 내용을 배우도록 Claude Code 스킬로 묶었다.
 스킬 안에 데모마다 구현 노트(NOTES.md), 소스, 그림이 모두 들어 있어 네트워크 없이 쓴다.
 
-> A Claude Code skill: 125 short web-graphics demos, one technique each, with implementation notes, full source and stills — for agents that make videos.
+> A Claude Code skill: 146 short web-graphics demos, one technique each, with implementation notes, full source and stills — for agents that make videos.
 
 ## 설치
 
@@ -81,41 +81,36 @@ MIT — [LICENSE](LICENSE). 데모가 쓰는 라이브러리와 글꼴(`npm ci`�
 
 그림을 누르면 그 편의 구현 노트가 열린다.
 
-### 웹 그래픽 기법 · 01–17
+### 웹 그래픽 기법 · 14편
 
-SVG 필터, 셰이더, GPU 시뮬레이션, three.js — 웹 그래픽의 기본기
+SVG 필터, CSS 3D, Canvas 2D, 셰이더, GPU 시뮬레이션, three.js — 웹 그래픽의 기본기
 
 <table>
 <tr>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/01-svg-ink/NOTES.md"><img src="skills/aimotion/demos/01-svg-ink/out/poster.jpg" width="140" alt="01 먹 한 방울"></a><br><a href="skills/aimotion/demos/01-svg-ink/NOTES.md"><b>01</b> 먹 한 방울</a><br><sub>SVG 필터 · feTurbulence + feDisplacementMap</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/02-css-popup/NOTES.md"><img src="skills/aimotion/demos/02-css-popup/out/poster.jpg" width="140" alt="02 펼쳐지는 종이 마을"></a><br><a href="skills/aimotion/demos/02-css-popup/NOTES.md"><b>02</b> 펼쳐지는 종이 마을</a><br><sub>CSS 3D 변형 · perspective + preserve-3d</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/03-coral-growth/NOTES.md"><img src="skills/aimotion/demos/03-coral-growth/out/poster.jpg" width="140" alt="03 자라는 산호"></a><br><a href="skills/aimotion/demos/03-coral-growth/NOTES.md"><b>03</b> 자라는 산호</a><br><sub>Canvas 2D 절차적 생성 · Space Colonization</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/04-sketch-diagram/NOTES.md"><img src="skills/aimotion/demos/04-sketch-diagram/out/poster.jpg" width="140" alt="04 손으로 그린 설명"></a><br><a href="skills/aimotion/demos/04-sketch-diagram/NOTES.md"><b>04</b> 손으로 그린 설명</a><br><sub>rough.js + perfect-freehand · 손그림 렌더링</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/05-fbm-nebula/NOTES.md"><img src="skills/aimotion/demos/05-fbm-nebula/out/poster.jpg" width="140" alt="05 흐르는 성운"></a><br><a href="skills/aimotion/demos/05-fbm-nebula/NOTES.md"><b>05</b> 흐르는 성운</a><br><sub>WebGL2 프래그먼트 셰이더 · 도메인 워핑 fBm</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/06-aurora-raymarch/NOTES.md"><img src="skills/aimotion/demos/06-aurora-raymarch/out/poster.jpg" width="140" alt="06 오로라, 빛의 커튼"></a><br><a href="skills/aimotion/demos/06-aurora-raymarch/NOTES.md"><b>06</b> 오로라, 빛의 커튼</a><br><sub>WebGL2 볼류메트릭 레이마칭</sub></td>
 </tr>
 <tr>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/06-aurora-raymarch/NOTES.md"><img src="skills/aimotion/demos/06-aurora-raymarch/out/poster.jpg" width="140" alt="06 오로라, 빛의 커튼"></a><br><a href="skills/aimotion/demos/06-aurora-raymarch/NOTES.md"><b>06</b> 오로라, 빛의 커튼</a><br><sub>WebGL2 볼류메트릭 레이마칭</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/07-sdf-planet/NOTES.md"><img src="skills/aimotion/demos/07-sdf-planet/out/poster.jpg" width="140" alt="07 고리를 두른 행성"></a><br><a href="skills/aimotion/demos/07-sdf-planet/NOTES.md"><b>07</b> 고리를 두른 행성</a><br><sub>SDF 레이마칭 · 셰이더 하나로 만든 3D</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/08-caustics/NOTES.md"><img src="skills/aimotion/demos/08-caustics/out/poster.jpg" width="140" alt="08 수영장 바닥의 빛"></a><br><a href="skills/aimotion/demos/08-caustics/NOTES.md"><b>08</b> 수영장 바닥의 빛</a><br><sub>WebGL2 셰이더 · 굴절 코스틱</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/09-gpu-galaxy/NOTES.md"><img src="skills/aimotion/demos/09-gpu-galaxy/out/poster.jpg" width="140" alt="09 20만 개의 별"></a><br><a href="skills/aimotion/demos/09-gpu-galaxy/NOTES.md"><b>09</b> 20만 개의 별</a><br><sub>WebGL2 포인트 스프라이트 · 버텍스 셰이더 궤도</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/10-curl-flow/NOTES.md"><img src="skills/aimotion/demos/10-curl-flow/out/poster.jpg" width="140" alt="10 보이지 않는 바람"></a><br><a href="skills/aimotion/demos/10-curl-flow/NOTES.md"><b>10</b> 보이지 않는 바람</a><br><sub>GPU 파티클 · 컬 노이즈 + 핑퐁 텍스처</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/11-reaction-diffusion/NOTES.md"><img src="skills/aimotion/demos/11-reaction-diffusion/out/poster.jpg" width="140" alt="11 스스로 그리는 무늬"></a><br><a href="skills/aimotion/demos/11-reaction-diffusion/NOTES.md"><b>11</b> 스스로 그리는 무늬</a><br><sub>GPGPU 반응-확산 · Gray–Scott</sub></td>
 </tr>
 <tr>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/11-reaction-diffusion/NOTES.md"><img src="skills/aimotion/demos/11-reaction-diffusion/out/poster.jpg" width="140" alt="11 스스로 그리는 무늬"></a><br><a href="skills/aimotion/demos/11-reaction-diffusion/NOTES.md"><b>11</b> 스스로 그리는 무늬</a><br><sub>GPGPU 반응-확산 · Gray–Scott</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/12-stable-fluids/NOTES.md"><img src="skills/aimotion/demos/12-stable-fluids/out/poster.jpg" width="140" alt="12 물속에 퍼지는 잉크"></a><br><a href="skills/aimotion/demos/12-stable-fluids/NOTES.md"><b>12</b> 물속에 퍼지는 잉크</a><br><sub>GPU 유체 시뮬레이션 · Stable Fluids</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/13-glass-jellyfish/NOTES.md"><img src="skills/aimotion/demos/13-glass-jellyfish/out/poster.jpg" width="140" alt="13 유리 해파리"></a><br><a href="skills/aimotion/demos/13-glass-jellyfish/NOTES.md"><b>13</b> 유리 해파리</a><br><sub>three.js 물리 기반 재질 · 투과 + 블룸 후처리</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/14-instanced-coral/NOTES.md"><img src="skills/aimotion/demos/14-instanced-coral/out/poster.jpg" width="140" alt="14 피어나는 산호초"></a><br><a href="skills/aimotion/demos/14-instanced-coral/NOTES.md"><b>14</b> 피어나는 산호초</a><br><sub>three.js 인스턴싱 · 수천 개의 폴립</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/15-geo-globe/NOTES.md"><img src="skills/aimotion/demos/15-geo-globe/out/poster.jpg" width="140" alt="15 지구 위를 나는 길"></a><br><a href="skills/aimotion/demos/15-geo-globe/NOTES.md"><b>15</b> 지구 위를 나는 길</a><br><sub>d3-geo · 실제 해안선 + 정사영</sub></td>
-</tr>
-<tr>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/16-rapier-marbles/NOTES.md"><img src="skills/aimotion/demos/16-rapier-marbles/out/poster.jpg" width="140" alt="16 쏟아지는 구슬"></a><br><a href="skills/aimotion/demos/16-rapier-marbles/NOTES.md"><b>16</b> 쏟아지는 구슬</a><br><sub>Rapier2D (WebAssembly) 물리 · 미리 굽기</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/17-hangul-particles/NOTES.md"><img src="skills/aimotion/demos/17-hangul-particles/out/poster.jpg" width="140" alt="17 글자가 된 별"></a><br><a href="skills/aimotion/demos/17-hangul-particles/NOTES.md"><b>17</b> 글자가 된 별</a><br><sub>WebGL2 포인트 스프라이트 · 텍스트 샘플링</sub></td>
 </tr>
 </table>
 
-### 아날로그 표현 · 18–27
+### 아날로그 표현 · 19편
 
-수채화·유화·판화·리소·필름·목탄 — 재료의 질감을 코드로
+수채화·유화·판화·필름·목탄·붓글씨·암실·활판·자수·네온 — 재료와 매체의 질감을 코드로
 
 <table>
 <tr>
@@ -132,23 +127,34 @@ SVG 필터, 셰이더, GPU 시뮬레이션, three.js — 웹 그래픽의 기본
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/26-engraving/NOTES.md"><img src="skills/aimotion/demos/26-engraving/out/poster.jpg" width="140" alt="26 동판에 새긴 달"></a><br><a href="skills/aimotion/demos/26-engraving/NOTES.md"><b>26</b> 동판에 새긴 달</a><br><sub>WebGL2 셰이더 · 명암을 선의 굵기로 (판화 해칭)</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/27-marbling/NOTES.md"><img src="skills/aimotion/demos/27-marbling/out/poster.jpg" width="140" alt="27 물 위의 마블링"></a><br><a href="skills/aimotion/demos/27-marbling/NOTES.md"><b>27</b> 물 위의 마블링</a><br><sub>수학적 마블링 · 잉크 방울과 빗질의 닫힌식 변형 (Jaffer·Lu)</sub></td>
 </tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/42-calligraphy/NOTES.md"><img src="skills/aimotion/demos/42-calligraphy/out/poster.jpg" width="140" alt="42 붓으로 쓴 한 글자"></a><br><a href="skills/aimotion/demos/42-calligraphy/NOTES.md"><b>42</b> 붓으로 쓴 한 글자</a><br><sub>붓 물리 모델 · 먹 머금음·필압·비백 + 화선지 번짐</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/43-darkroom/NOTES.md"><img src="skills/aimotion/demos/43-darkroom/out/poster.jpg" width="140" alt="43 암실에서 떠오르는 사진"></a><br><a href="skills/aimotion/demos/43-darkroom/NOTES.md"><b>43</b> 암실에서 떠오르는 사진</a><br><sub>WebGL2 · 현상 반응 (잠상 → 은 입자) + 안전등</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/44-polaroid/NOTES.md"><img src="skills/aimotion/demos/44-polaroid/out/poster.jpg" width="140" alt="44 폴라로이드가 떠오르기까지"></a><br><a href="skills/aimotion/demos/44-polaroid/NOTES.md"><b>44</b> 폴라로이드가 떠오르기까지</a><br><sub>WebGL2 · 즉석 필름 시약 확산 + 색 현상 단계</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/45-stained-glass/NOTES.md"><img src="skills/aimotion/demos/45-stained-glass/out/poster.jpg" width="140" alt="45 빛이 머무는 유리창"></a><br><a href="skills/aimotion/demos/45-stained-glass/NOTES.md"><b>45</b> 빛이 머무는 유리창</a><br><sub>WebGL2 · 색유리 투과광 + 납선 + 바닥에 맺힌 빛</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/46-letterpress/NOTES.md"><img src="skills/aimotion/demos/46-letterpress/out/poster.jpg" width="140" alt="46 꾹 눌러 찍은 활판"></a><br><a href="skills/aimotion/demos/46-letterpress/NOTES.md"><b>46</b> 꾹 눌러 찍은 활판</a><br><sub>높이맵 활자 + 잉크 압착 셰이더 · 활판 인쇄</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/47-embroidery/NOTES.md"><img src="skills/aimotion/demos/47-embroidery/out/poster.jpg" width="140" alt="47 한 땀 한 땀 수놓은 꽃"></a><br><a href="skills/aimotion/demos/47-embroidery/NOTES.md"><b>47</b> 한 땀 한 땀 수놓은 꽃</a><br><sub>절차적 자수 · 땀 경로 + 실 광택 셰이더</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/48-scratch-art/NOTES.md"><img src="skills/aimotion/demos/48-scratch-art/out/poster.jpg" width="140" alt="48 긁어서 드러나는 무지개"></a><br><a href="skills/aimotion/demos/48-scratch-art/NOTES.md"><b>48</b> 긁어서 드러나는 무지개</a><br><sub>WebGL2 · 스크래치 페이퍼 (긁기 마스크 + 왁스 부스러기)</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/49-zoetrope/NOTES.md"><img src="skills/aimotion/demos/49-zoetrope/out/poster.jpg" width="140" alt="49 돌아가는 조이트로프"></a><br><a href="skills/aimotion/demos/49-zoetrope/NOTES.md"><b>49</b> 돌아가는 조이트로프</a><br><sub>회전 원통 + 틈새 스트로보 · 실제 원리로 만든 움직임</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/50-neon/NOTES.md"><img src="skills/aimotion/demos/50-neon/out/poster.jpg" width="140" alt="50 밤거리의 네온사인"></a><br><a href="skills/aimotion/demos/50-neon/NOTES.md"><b>50</b> 밤거리의 네온사인</a><br><sub>WebGL2 · 유리관 기체 방전 발광 + 벽 반사광</sub></td>
+</tr>
 </table>
 
-### 웹 플랫폼 기술 · 28–32
+### 웹 플랫폼 기술 · 3편
 
-WebGPU, Web Audio, 가변 폰트, 역기구학, 데이터 전환
+WebGPU 컴퓨트, Web Audio 분석, 가변 폰트 축 — 라이브러리 없이 브라우저 API로
 
 <table>
 <tr>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/28-webgpu-particles/NOTES.md"><img src="skills/aimotion/demos/28-webgpu-particles/out/poster.jpg" width="140" alt="28 백만 개의 입자"></a><br><a href="skills/aimotion/demos/28-webgpu-particles/NOTES.md"><b>28</b> 백만 개의 입자</a><br><sub>WebGPU 컴퓨트 셰이더 · 입자 100만 개 중력 시뮬레이션</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/29-audio-sync/NOTES.md"><img src="skills/aimotion/demos/29-audio-sync/out/poster.jpg" width="140" alt="29 소리가 그리는 빛"></a><br><a href="skills/aimotion/demos/29-audio-sync/NOTES.md"><b>29</b> 소리가 그리는 빛</a><br><sub>Web Audio · OfflineAudioContext 합성 + FFT 분석 동기화</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/30-kinetic-type/NOTES.md"><img src="skills/aimotion/demos/30-kinetic-type/out/poster.jpg" width="140" alt="30 움직이는 글자"></a><br><a href="skills/aimotion/demos/30-kinetic-type/NOTES.md"><b>30</b> 움직이는 글자</a><br><sub>가변 폰트 · font-variation-settings 굵기 축 + 글자 단위 모션</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/31-ik-character/NOTES.md"><img src="skills/aimotion/demos/31-ik-character/out/poster.jpg" width="140" alt="31 손을 뻗는 아이"></a><br><a href="skills/aimotion/demos/31-ik-character/NOTES.md"><b>31</b> 손을 뻗는 아이</a><br><sub>2D 뼈대 · FABRIK 역기구학 + 스키닝</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/32-dataviz-motion/NOTES.md"><img src="skills/aimotion/demos/32-dataviz-motion/out/poster.jpg" width="140" alt="32 숫자가 움직일 때"></a><br><a href="skills/aimotion/demos/32-dataviz-motion/NOTES.md"><b>32</b> 숫자가 움직일 때</a><br><sub>d3 · 데이터 전환 애니메이션 (막대 순위 → 산키 → 지도)</sub></td>
 </tr>
 </table>
 
-### 자연 현상 · 광학 · 수학 · 33–41
+### 자연 현상 · 광학 · 수학 · 9편
 
 바다·구름·침식·천·군집, 빛의 간섭과 분산, 프랙털 딥 줌
 
@@ -168,29 +174,9 @@ WebGPU, Web Audio, 가변 폰트, 역기구학, 데이터 전환
 </tr>
 </table>
 
-### 아날로그 표현 2 · 42–50
+### 실험 타이포그래피 · 21편
 
-붓글씨·암실·폴라로이드·스테인드글라스·활판·자수·네온
-
-<table>
-<tr>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/42-calligraphy/NOTES.md"><img src="skills/aimotion/demos/42-calligraphy/out/poster.jpg" width="140" alt="42 붓으로 쓴 한 글자"></a><br><a href="skills/aimotion/demos/42-calligraphy/NOTES.md"><b>42</b> 붓으로 쓴 한 글자</a><br><sub>붓 물리 모델 · 먹 머금음·필압·비백 + 화선지 번짐</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/43-darkroom/NOTES.md"><img src="skills/aimotion/demos/43-darkroom/out/poster.jpg" width="140" alt="43 암실에서 떠오르는 사진"></a><br><a href="skills/aimotion/demos/43-darkroom/NOTES.md"><b>43</b> 암실에서 떠오르는 사진</a><br><sub>WebGL2 · 현상 반응 (잠상 → 은 입자) + 안전등</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/44-polaroid/NOTES.md"><img src="skills/aimotion/demos/44-polaroid/out/poster.jpg" width="140" alt="44 폴라로이드가 떠오르기까지"></a><br><a href="skills/aimotion/demos/44-polaroid/NOTES.md"><b>44</b> 폴라로이드가 떠오르기까지</a><br><sub>WebGL2 · 즉석 필름 시약 확산 + 색 현상 단계</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/45-stained-glass/NOTES.md"><img src="skills/aimotion/demos/45-stained-glass/out/poster.jpg" width="140" alt="45 빛이 머무는 유리창"></a><br><a href="skills/aimotion/demos/45-stained-glass/NOTES.md"><b>45</b> 빛이 머무는 유리창</a><br><sub>WebGL2 · 색유리 투과광 + 납선 + 바닥에 맺힌 빛</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/46-letterpress/NOTES.md"><img src="skills/aimotion/demos/46-letterpress/out/poster.jpg" width="140" alt="46 꾹 눌러 찍은 활판"></a><br><a href="skills/aimotion/demos/46-letterpress/NOTES.md"><b>46</b> 꾹 눌러 찍은 활판</a><br><sub>높이맵 활자 + 잉크 압착 셰이더 · 활판 인쇄</sub></td>
-</tr>
-<tr>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/47-embroidery/NOTES.md"><img src="skills/aimotion/demos/47-embroidery/out/poster.jpg" width="140" alt="47 한 땀 한 땀 수놓은 꽃"></a><br><a href="skills/aimotion/demos/47-embroidery/NOTES.md"><b>47</b> 한 땀 한 땀 수놓은 꽃</a><br><sub>절차적 자수 · 땀 경로 + 실 광택 셰이더</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/48-scratch-art/NOTES.md"><img src="skills/aimotion/demos/48-scratch-art/out/poster.jpg" width="140" alt="48 긁어서 드러나는 무지개"></a><br><a href="skills/aimotion/demos/48-scratch-art/NOTES.md"><b>48</b> 긁어서 드러나는 무지개</a><br><sub>WebGL2 · 스크래치 페이퍼 (긁기 마스크 + 왁스 부스러기)</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/49-zoetrope/NOTES.md"><img src="skills/aimotion/demos/49-zoetrope/out/poster.jpg" width="140" alt="49 돌아가는 조이트로프"></a><br><a href="skills/aimotion/demos/49-zoetrope/NOTES.md"><b>49</b> 돌아가는 조이트로프</a><br><sub>회전 원통 + 틈새 스트로보 · 실제 원리로 만든 움직임</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/50-neon/NOTES.md"><img src="skills/aimotion/demos/50-neon/out/poster.jpg" width="140" alt="50 밤거리의 네온사인"></a><br><a href="skills/aimotion/demos/50-neon/NOTES.md"><b>50</b> 밤거리의 네온사인</a><br><sub>WebGL2 · 유리관 기체 방전 발광 + 벽 반사광</sub></td>
-</tr>
-</table>
-
-### 모션 타이포그래피 · 51–66
-
-글자를 거리장·타일·종이·물리·불·빛으로 움직이기
+거리장·파라메트릭 글꼴·연체 물리·불·커스틱·점균·파동·모양 안 조판·슬릿스캔·스캐니메이션·레이저 각인·스텐실 — 글자에 시뮬레이션, 셰이더, 광학과 재료의 원리를 건 실험
 
 <table>
 <tr>
@@ -216,10 +202,17 @@ WebGPU, Web Audio, 가변 폰트, 역기구학, 데이터 전환
 </tr>
 <tr>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/66-rain-poem/NOTES.md"><img src="skills/aimotion/demos/66-rain-poem/out/poster.jpg" width="140" alt="66 빗속의 시"></a><br><a href="skills/aimotion/demos/66-rain-poem/NOTES.md"><b>66</b> 빗속의 시</a><br><sub>GPU 2D 파동 방정식 · 굴절 · 프레넬 반사 · 수면 커스틱</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/141-shape-text/NOTES.md"><img src="skills/aimotion/demos/141-shape-text/out/poster.jpg" width="140" alt="141 글로 그린 고래"></a><br><a href="skills/aimotion/demos/141-shape-text/NOTES.md"><b>141</b> 글로 그린 고래</a><br><sub>모양 안 조판 · 스캔라인 구간 + Knuth–Plass 줄 나누기 + 단어 재배치</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/143-slit-scan/NOTES.md"><img src="skills/aimotion/demos/143-slit-scan/out/poster.jpg" width="140" alt="143 기다림"></a><br><a href="skills/aimotion/demos/143-slit-scan/NOTES.md"><b>143</b> 기다림</a><br><sub>슬릿스캔 · 시간 변위 표본 (x, y, t 볼륨)</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/144-scanimation/NOTES.md"><img src="skills/aimotion/demos/144-scanimation/out/poster.jpg" width="140" alt="144 줄무늬 너머의 글자"></a><br><a href="skills/aimotion/demos/144-scanimation/NOTES.md"><b>144</b> 줄무늬 너머의 글자</a><br><sub>스캐니메이션 · 바리어 그리드 인터레이스 + 모아레 확대</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/145-laser-engrave/NOTES.md"><img src="skills/aimotion/demos/145-laser-engrave/out/poster.jpg" width="140" alt="145 나무에 새긴 이름"></a><br><a href="skills/aimotion/demos/145-laser-engrave/NOTES.md"><b>145</b> 나무에 새긴 이름</a><br><sub>레이저 각인 · 래스터 주사 + 머문 시간에 따른 탄 깊이 + 흑체 열 자국</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/146-spray-stencil/NOTES.md"><img src="skills/aimotion/demos/146-spray-stencil/out/poster.jpg" width="140" alt="146 벽에 뿌린 한마디"></a><br><a href="skills/aimotion/demos/146-spray-stencil/NOTES.md"><b>146</b> 벽에 뿌린 한마디</a><br><sub>스프레이 스텐실 · 가우스 분사 + 다리 있는 스텐실 + 흘러내림</sub></td>
 </tr>
 </table>
 
-### GSAP · 67–72
+### GSAP · 6편
 
 SplitText, MorphSVG, Flip, MotionPath — PixiJS·three.js와 함께
 
@@ -236,20 +229,26 @@ SplitText, MorphSVG, Flip, MotionPath — PixiJS·three.js와 함께
 </tr>
 </table>
 
-### 유명 라이브러리 · 73–82
+### 유명 라이브러리 · 14편
 
-anime.js, Motion, Lottie, p5.js, Paper.js, Zdog, matter-js, mo.js, Babylon.js, Tone.js
+d3, rough.js, Rapier2D, anime.js, Motion, Lottie, p5.js, Paper.js, Zdog, matter-js, mo.js, Babylon.js, Tone.js
 
 <table>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/04-sketch-diagram/NOTES.md"><img src="skills/aimotion/demos/04-sketch-diagram/out/poster.jpg" width="140" alt="04 손으로 그린 설명"></a><br><a href="skills/aimotion/demos/04-sketch-diagram/NOTES.md"><b>04</b> 손으로 그린 설명</a><br><sub>rough.js + perfect-freehand · 손그림 렌더링</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/15-geo-globe/NOTES.md"><img src="skills/aimotion/demos/15-geo-globe/out/poster.jpg" width="140" alt="15 지구 위를 나는 길"></a><br><a href="skills/aimotion/demos/15-geo-globe/NOTES.md"><b>15</b> 지구 위를 나는 길</a><br><sub>d3-geo · 실제 해안선 + 정사영</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/16-rapier-marbles/NOTES.md"><img src="skills/aimotion/demos/16-rapier-marbles/out/poster.jpg" width="140" alt="16 쏟아지는 구슬"></a><br><a href="skills/aimotion/demos/16-rapier-marbles/NOTES.md"><b>16</b> 쏟아지는 구슬</a><br><sub>Rapier2D (WebAssembly) 물리 · 미리 굽기</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/32-dataviz-motion/NOTES.md"><img src="skills/aimotion/demos/32-dataviz-motion/out/poster.jpg" width="140" alt="32 숫자가 움직일 때"></a><br><a href="skills/aimotion/demos/32-dataviz-motion/NOTES.md"><b>32</b> 숫자가 움직일 때</a><br><sub>d3 · 데이터 전환 애니메이션 (막대 순위 → 산키 → 지도)</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/73-anime-stagger/NOTES.md"><img src="skills/aimotion/demos/73-anime-stagger/out/poster.jpg" width="140" alt="73 점들의 합창"></a><br><a href="skills/aimotion/demos/73-anime-stagger/NOTES.md"><b>73</b> 점들의 합창</a><br><sub>anime.js 4 · 그리드 스태거 · SVG 드로잉/모프</sub></td>
+</tr>
+<tr>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/74-motion-spring/NOTES.md"><img src="skills/aimotion/demos/74-motion-spring/out/poster.jpg" width="140" alt="74 알림이 내려앉을 때"></a><br><a href="skills/aimotion/demos/74-motion-spring/NOTES.md"><b>74</b> 알림이 내려앉을 때</a><br><sub>Motion(motion.dev) · 스프링 물리 · 수동 시계 seek</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/75-lottie-code/NOTES.md"><img src="skills/aimotion/demos/75-lottie-code/out/poster.jpg" width="140" alt="75 코드로 쓴 로티"></a><br><a href="skills/aimotion/demos/75-lottie-code/NOTES.md"><b>75</b> 코드로 쓴 로티</a><br><sub>lottie-web · 트림 패스 · 리피터 · 매트 · 셰이프 모프 (JSON을 코드로 작성)</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/76-p5-tree/NOTES.md"><img src="skills/aimotion/demos/76-p5-tree/out/poster.jpg" width="140" alt="76 바람 부는 나무"></a><br><a href="skills/aimotion/demos/76-p5-tree/NOTES.md"><b>76</b> 바람 부는 나무</a><br><sub>p5.js · 재귀 가지치기 · noise 바람 · 인스턴스 모드</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/77-paper-boolean/NOTES.md"><img src="skills/aimotion/demos/77-paper-boolean/out/poster.jpg" width="140" alt="77 오리고 붙인 풍경"></a><br><a href="skills/aimotion/demos/77-paper-boolean/NOTES.md"><b>77</b> 오리고 붙인 풍경</a><br><sub>Paper.js · 불리언 연산(unite/subtract/intersect) · 경로 스무딩</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/78-zdog-planet/NOTES.md"><img src="skills/aimotion/demos/78-zdog-planet/out/poster.jpg" width="140" alt="78 작은 행성"></a><br><a href="skills/aimotion/demos/78-zdog-planet/NOTES.md"><b>78</b> 작은 행성</a><br><sub>Zdog · 평면 의사 3D 일러스트 · 팔레트 낮/밤 전환</sub></td>
 </tr>
 <tr>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/78-zdog-planet/NOTES.md"><img src="skills/aimotion/demos/78-zdog-planet/out/poster.jpg" width="140" alt="78 작은 행성"></a><br><a href="skills/aimotion/demos/78-zdog-planet/NOTES.md"><b>78</b> 작은 행성</a><br><sub>Zdog · 평면 의사 3D 일러스트 · 팔레트 낮/밤 전환</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/79-matter-galton/NOTES.md"><img src="skills/aimotion/demos/79-matter-galton/out/poster.jpg" width="140" alt="79 갈톤 보드"></a><br><a href="skills/aimotion/demos/79-matter-galton/NOTES.md"><b>79</b> 갈톤 보드</a><br><sub>matter-js 강체 물리 · 고정 dt 굽기 · 이항분포 → 정규분포</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/80-mojs-burst/NOTES.md"><img src="skills/aimotion/demos/80-mojs-burst/out/poster.jpg" width="140" alt="80 축하의 순간"></a><br><a href="skills/aimotion/demos/80-mojs-burst/NOTES.md"><b>80</b> 축하의 순간</a><br><sub>mo.js · Burst · Shape · ShapeSwirl · Html · Timeline.setProgress</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/81-babylon-greenhouse/NOTES.md"><img src="skills/aimotion/demos/81-babylon-greenhouse/out/poster.jpg" width="140" alt="81 아침의 온실"></a><br><a href="skills/aimotion/demos/81-babylon-greenhouse/NOTES.md"><b>81</b> 아침의 온실</a><br><sub>Babylon.js · PBR 유리 · 그림자 생성기(PCF) · GlowLayer · 부피광 산란</sub></td>
@@ -257,7 +256,7 @@ anime.js, Motion, Lottie, p5.js, Paper.js, Zdog, matter-js, mo.js, Babylon.js, T
 </tr>
 </table>
 
-### 웹 네이티브 애니메이션 · 83–85
+### 웹 네이티브 애니메이션 · 3편
 
 CSS @keyframes, SVG SMIL, 스크롤 기반 애니메이션
 
@@ -269,65 +268,86 @@ CSS @keyframes, SVG SMIL, 스크롤 기반 애니메이션
 </tr>
 </table>
 
-### 영상 표현력 · 86–95
+### 영상 표현력 · 17편
 
-표정 리그, 임팩트, 장면 전환, 멀티플레인 카메라, 닫힌식 물리 — 짧은 영상의 연출 장치
+표정 리그·립싱크, 임팩트, 장면 전환, 멀티플레인·사진 시차, 스케일 줌, 시선 유도, 시간 재매핑, 색 보정, 전후 비교 — 짧은 영상의 연출 장치
 
 <table>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/31-ik-character/NOTES.md"><img src="skills/aimotion/demos/31-ik-character/out/poster.jpg" width="140" alt="31 손을 뻗는 아이"></a><br><a href="skills/aimotion/demos/31-ik-character/NOTES.md"><b>31</b> 손을 뻗는 아이</a><br><sub>2D 뼈대 · FABRIK 역기구학 + 스키닝</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/86-face-rig/NOTES.md"><img src="skills/aimotion/demos/86-face-rig/out/poster.jpg" width="140" alt="86 에… 에… 에취!"></a><br><a href="skills/aimotion/demos/86-face-rig/NOTES.md"><b>86</b> 에… 에… 에취!</a><br><sub>얼굴 리그 · 표정 채널 + 연기 곡선</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/87-sensor-vision/NOTES.md"><img src="skills/aimotion/demos/87-sensor-vision/out/poster.jpg" width="140" alt="87 밤 숲의 한 사람"></a><br><a href="skills/aimotion/demos/87-sensor-vision/NOTES.md"><b>87</b> 밤 숲의 한 사람</a><br><sub>센서 시점 · 스칼라장 + 거짓 색 + 스캔 전환</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/88-loupe-lens/NOTES.md"><img src="skills/aimotion/demos/88-loupe-lens/out/poster.jpg" width="140" alt="88 날개의 파랑"></a><br><a href="skills/aimotion/demos/88-loupe-lens/NOTES.md"><b>88</b> 날개의 파랑</a><br><sub>돋보기 렌즈 · 굴절 왜곡 + 숨은 층 + 아이리스 전환</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/89-impact-kit/NOTES.md"><img src="skills/aimotion/demos/89-impact-kit/out/poster.jpg" width="140" alt="89 세 번 찍는 도장"></a><br><a href="skills/aimotion/demos/89-impact-kit/NOTES.md"><b>89</b> 세 번 찍는 도장</a><br><sub>임팩트 키트 · 한 박자를 세게 만드는 겹침</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/90-measure-hud/NOTES.md"><img src="skills/aimotion/demos/90-measure-hud/out/poster.jpg" width="140" alt="90 구름 위의 아침"></a><br><a href="skills/aimotion/demos/90-measure-hud/NOTES.md"><b>90</b> 구름 위의 아침</a><br><sub>재는 연출 · 오도미터 + 계기 바늘 + 줄자</sub></td>
 </tr>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/90-measure-hud/NOTES.md"><img src="skills/aimotion/demos/90-measure-hud/out/poster.jpg" width="140" alt="90 구름 위의 아침"></a><br><a href="skills/aimotion/demos/90-measure-hud/NOTES.md"><b>90</b> 구름 위의 아침</a><br><sub>재는 연출 · 오도미터 + 계기 바늘 + 줄자</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/91-gait-cycle/NOTES.md"><img src="skills/aimotion/demos/91-gait-cycle/out/poster.jpg" width="140" alt="91 눈 위의 박자"></a><br><a href="skills/aimotion/demos/91-gait-cycle/NOTES.md"><b>91</b> 눈 위의 박자</a><br><sub>닫힌식 보행 주기 · 발 고정 · 발자국 박자</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/92-type-acting/NOTES.md"><img src="skills/aimotion/demos/92-type-acting/out/poster.jpg" width="140" alt="92 고백하던 날"></a><br><a href="skills/aimotion/demos/92-type-acting/NOTES.md"><b>92</b> 고백하던 날</a><br><sub>뜻을 연기하는 글자 · 채널 기반 글자 효과</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/93-transition-kit/NOTES.md"><img src="skills/aimotion/demos/93-transition-kit/out/poster.jpg" width="140" alt="93 종이배의 하루"></a><br><a href="skills/aimotion/demos/93-transition-kit/NOTES.md"><b>93</b> 종이배의 하루</a><br><sub>장면 전환 키트 · 와이프·아이리스·휩 팬·매치 컷</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/94-multiplane/NOTES.md"><img src="skills/aimotion/demos/94-multiplane/out/poster.jpg" width="140" alt="94 이슬 너머 먼 불빛"></a><br><a href="skills/aimotion/demos/94-multiplane/NOTES.md"><b>94</b> 이슬 너머 먼 불빛</a><br><sub>멀티플레인 카메라 · 평면 일러스트의 깊이</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/95-closed-form-physics/NOTES.md"><img src="skills/aimotion/demos/95-closed-form-physics/out/poster.jpg" width="140" alt="95 다 같이, 멈춰"></a><br><a href="skills/aimotion/demos/95-closed-form-physics/NOTES.md"><b>95</b> 다 같이, 멈춰</a><br><sub>닫힌식 물리 · 시뮬레이션 없이 튕기고 흔들리기</sub></td>
 </tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/127-before-after/NOTES.md"><img src="skills/aimotion/demos/127-before-after/out/poster.jpg" width="140" alt="127 정리 전, 정리 후"></a><br><a href="skills/aimotion/demos/127-before-after/NOTES.md"><b>127</b> 정리 전, 정리 후</a><br><sub>비교 장면 · 한 장면의 두 상태 + 와이프 슬라이더 + 분할 화면</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/128-scale-zoom/NOTES.md"><img src="skills/aimotion/demos/128-scale-zoom/out/poster.jpg" width="140" alt="128 한 방울에서 지구까지"></a><br><a href="skills/aimotion/demos/128-scale-zoom/NOTES.md"><b>128</b> 한 방울에서 지구까지</a><br><sub>스케일 줌 · 지수 줌 + 단계별 장면 + 원점 재설정</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/131-spotlight-focus/NOTES.md"><img src="skills/aimotion/demos/131-spotlight-focus/out/poster.jpg" width="140" alt="131 책방 고양이는 어디에"></a><br><a href="skills/aimotion/demos/131-spotlight-focus/NOTES.md"><b>131</b> 책방 고양이는 어디에</a><br><sub>시선 유도 · 스포트라이트 마스크 + 초점 이동(피사계 심도)</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/132-photo-parallax/NOTES.md"><img src="skills/aimotion/demos/132-photo-parallax/out/poster.jpg" width="140" alt="132 새벽 호숫가"></a><br><a href="skills/aimotion/demos/132-photo-parallax/NOTES.md"><b>132</b> 새벽 호숫가</a><br><sub>2.5D 사진 시차 · 깊이맵 광선 진행 + 돌리 줌</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/133-speed-ramp/NOTES.md"><img src="skills/aimotion/demos/133-speed-ramp/out/poster.jpg" width="140" alt="133 웅덩이 위의 알리"></a><br><a href="skills/aimotion/demos/133-speed-ramp/NOTES.md"><b>133</b> 웅덩이 위의 알리</a><br><sub>시간 재매핑 · 속도 곡선 적분과 노출 모션 블러, 정지 화면</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/134-lip-sync/NOTES.md"><img src="skills/aimotion/demos/134-lip-sync/out/poster.jpg" width="140" alt="134 아침 라디오"></a><br><a href="skills/aimotion/demos/134-lip-sync/NOTES.md"><b>134</b> 아침 라디오</a><br><sub>립싱크 · 한글 자모 → 입 모양 + 조음 결합</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/136-color-grade/NOTES.md"><img src="skills/aimotion/demos/136-color-grade/out/poster.jpg" width="140" alt="136 같은 골목, 세 개의 기억"></a><br><a href="skills/aimotion/demos/136-color-grade/NOTES.md"><b>136</b> 같은 골목, 세 개의 기억</a><br><sub>컬러 그레이딩 · 3D LUT + 낮을 밤으로</sub></td>
+</tr>
 </table>
 
-### 타이포그래피 모션그래픽 · 96–115
+### 타이포그래피 모션그래픽 · 26편
 
-말하는 자막, 플랩 전광판, 한글 조합, 만화 의성어, 금속 타이틀 — 글자가 주인공인 장면
+말하는 자막, 예능 자막, 손글씨 쓰기, 뜻을 연기하는 글자, 플랩 전광판, 한글 조합, 글자 뒤 피사체, 엔딩 크레딧, 광학 자간 — 글자가 주인공인 장면
 
 <table>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/92-type-acting/NOTES.md"><img src="skills/aimotion/demos/92-type-acting/out/poster.jpg" width="140" alt="92 고백하던 날"></a><br><a href="skills/aimotion/demos/92-type-acting/NOTES.md"><b>92</b> 고백하던 날</a><br><sub>뜻을 연기하는 글자 · 채널 기반 글자 효과</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/96-kinetic-camera/NOTES.md"><img src="skills/aimotion/demos/96-kinetic-camera/out/poster.jpg" width="140" alt="96 오늘은 그냥, 한 번"></a><br><a href="skills/aimotion/demos/96-kinetic-camera/NOTES.md"><b>96</b> 오늘은 그냥, 한 번</a><br><sub>키네틱 타이포그래피 · 글자 지도 위를 나는 카메라</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/97-karaoke-captions/NOTES.md"><img src="skills/aimotion/demos/97-karaoke-captions/out/poster.jpg" width="140" alt="97 양말 도둑"></a><br><a href="skills/aimotion/demos/97-karaoke-captions/NOTES.md"><b>97</b> 양말 도둑</a><br><sub>말하는 자막 · 단어 단위 타이밍 + 하이라이트 필 + 강조 팝</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/98-split-flap/NOTES.md"><img src="skills/aimotion/demos/98-split-flap/out/poster.jpg" width="140" alt="98 집으로 가는 막차"></a><br><a href="skills/aimotion/demos/98-split-flap/NOTES.md"><b>98</b> 집으로 가는 막차</a><br><sub>플랩 전광판 · 반쪽 판이 넘어가는 기계식 글자</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/99-knockout-zoom/NOTES.md"><img src="skills/aimotion/demos/99-knockout-zoom/out/poster.jpg" width="140" alt="99 여름으로 난 창"></a><br><a href="skills/aimotion/demos/99-knockout-zoom/NOTES.md"><b>99</b> 여름으로 난 창</a><br><sub>녹아웃 글자 · 카운터를 통과하는 줌</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/100-echo-type/NOTES.md"><img src="skills/aimotion/demos/100-echo-type/out/poster.jpg" width="140" alt="100 지금"></a><br><a href="skills/aimotion/demos/100-echo-type/NOTES.md"><b>100</b> 지금</a><br><sub>에코와 늘임 · 시간 지연 반복 + 늘어나는 글자</sub></td>
 </tr>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/100-echo-type/NOTES.md"><img src="skills/aimotion/demos/100-echo-type/out/poster.jpg" width="140" alt="100 지금"></a><br><a href="skills/aimotion/demos/100-echo-type/NOTES.md"><b>100</b> 지금</a><br><sub>에코와 늘임 · 시간 지연 반복 + 늘어나는 글자</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/101-marker-annotate/NOTES.md"><img src="skills/aimotion/demos/101-marker-annotate/out/poster.jpg" width="140" alt="101 여백에 남긴 비법"></a><br><a href="skills/aimotion/demos/101-marker-annotate/NOTES.md"><b>101</b> 여백에 남긴 비법</a><br><sub>형광펜과 손 주석 · 손으로 긋는 강조의 문법</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/102-iso-blocks/NOTES.md"><img src="skills/aimotion/demos/102-iso-blocks/out/poster.jpg" width="140" alt="102 쌓으면, 꿈"></a><br><a href="skills/aimotion/demos/102-iso-blocks/NOTES.md"><b>102</b> 쌓으면, 꿈</a><br><sub>아이소메트릭 복셀 글자 · 블록 조립과 재조립</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/103-word-swap/NOTES.md"><img src="skills/aimotion/demos/103-word-swap/out/poster.jpg" width="140" alt="103 오늘의 빈칸"></a><br><a href="skills/aimotion/demos/103-word-swap/NOTES.md"><b>103</b> 오늘의 빈칸</a><br><sub>단어 교체 키트 · 한 자리에서 바뀌는 낱말</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/104-type-tunnel/NOTES.md"><img src="skills/aimotion/demos/104-type-tunnel/out/poster.jpg" width="140" alt="104 오늘이라는 터널"></a><br><a href="skills/aimotion/demos/104-type-tunnel/NOTES.md"><b>104</b> 오늘이라는 터널</a><br><sub>글자 터널 · 3D 공간을 지나가는 글자</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/105-comic-sfx/NOTES.md"><img src="skills/aimotion/demos/105-comic-sfx/out/poster.jpg" width="140" alt="105 택배 왔다"></a><br><a href="skills/aimotion/demos/105-comic-sfx/NOTES.md"><b>105</b> 택배 왔다</a><br><sub>만화 의성어 레터링 · 소리를 그리는 글자</sub></td>
 </tr>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/105-comic-sfx/NOTES.md"><img src="skills/aimotion/demos/105-comic-sfx/out/poster.jpg" width="140" alt="105 택배 왔다"></a><br><a href="skills/aimotion/demos/105-comic-sfx/NOTES.md"><b>105</b> 택배 왔다</a><br><sub>만화 의성어 레터링 · 소리를 그리는 글자</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/106-ime-compose/NOTES.md"><img src="skills/aimotion/demos/106-ime-compose/out/poster.jpg" width="140" alt="106 보내기 전에"></a><br><a href="skills/aimotion/demos/106-ime-compose/NOTES.md"><b>106</b> 보내기 전에</a><br><sub>조합되는 한글 · 입력기 조합 + 쓰고 지우는 문장</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/107-unroll-text/NOTES.md"><img src="skills/aimotion/demos/107-unroll-text/out/poster.jpg" width="140" alt="107 돌고 돌아 제자리"></a><br><a href="skills/aimotion/demos/107-unroll-text/NOTES.md"><b>107</b> 돌고 돌아 제자리</a><br><sub>경로 위 조판 · 호 길이로 맞춘 경로 모핑</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/108-liquid-fill/NOTES.md"><img src="skills/aimotion/demos/108-liquid-fill/out/poster.jpg" width="140" alt="108 가득 찬 아침"></a><br><a href="skills/aimotion/demos/108-liquid-fill/NOTES.md"><b>108</b> 가득 찬 아침</a><br><sub>차오르는 글자 · 글자를 그릇으로 쓰는 액체</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/109-paper-unfold/NOTES.md"><img src="skills/aimotion/demos/109-paper-unfold/out/poster.jpg" width="140" alt="109 접힌 쪽지"></a><br><a href="skills/aimotion/demos/109-paper-unfold/NOTES.md"><b>109</b> 접힌 쪽지</a><br><sub>펼쳐지는 종이 글자 · 접힘선 따라 열리는 타이포그래피</sub></td>
-<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/110-sticker-peel/NOTES.md"><img src="skills/aimotion/demos/110-sticker-peel/out/poster.jpg" width="140" alt="110 나중에 말고 지금"></a><br><a href="skills/aimotion/demos/110-sticker-peel/NOTES.md"><b>110</b> 나중에 말고 지금</a><br><sub>다이컷 스티커 · 말려 올라가는 떼기</sub></td>
 </tr>
 <tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/110-sticker-peel/NOTES.md"><img src="skills/aimotion/demos/110-sticker-peel/out/poster.jpg" width="140" alt="110 나중에 말고 지금"></a><br><a href="skills/aimotion/demos/110-sticker-peel/NOTES.md"><b>110</b> 나중에 말고 지금</a><br><sub>다이컷 스티커 · 말려 올라가는 떼기</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/111-chrome-sting/NOTES.md"><img src="skills/aimotion/demos/111-chrome-sting/out/poster.jpg" width="140" alt="111 오늘의 발견"></a><br><a href="skills/aimotion/demos/111-chrome-sting/NOTES.md"><b>111</b> 오늘의 발견</a><br><sub>방송 타이틀 스팅 · 금속 입체 글자 + 반사 + 빛 쓸기</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/112-projection-map/NOTES.md"><img src="skills/aimotion/demos/112-projection-map/out/poster.jpg" width="140" alt="112 이 골목도 무대였다"></a><br><a href="skills/aimotion/demos/112-projection-map/NOTES.md"><b>112</b> 이 골목도 무대였다</a><br><sub>프로젝션 매핑 타이포그래피 · 건물 면의 호모그래피와 아나모픽</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/113-puffy-type/NOTES.md"><img src="skills/aimotion/demos/113-puffy-type/out/poster.jpg" width="140" alt="113 빵빵하게"></a><br><a href="skills/aimotion/demos/113-puffy-type/NOTES.md"><b>113</b> 빵빵하게</a><br><sub>거리장 부풀림 셰이딩 · 높이장 법선 · 광택과 접촉 그림자</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/114-beat-type/NOTES.md"><img src="skills/aimotion/demos/114-beat-type/out/poster.jpg" width="140" alt="114 하나 둘 셋 넷"></a><br><a href="skills/aimotion/demos/114-beat-type/NOTES.md"><b>114</b> 하나 둘 셋 넷</a><br><sub>박자에 맞춘 글자 · 마디·박·엇박으로 짜는 타이포 레이아웃</sub></td>
+</tr>
+<tr>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/115-marquee-tape/NOTES.md"><img src="skills/aimotion/demos/115-marquee-tape/out/poster.jpg" width="140" alt="115 취급주의, 오늘의 주인공"></a><br><a href="skills/aimotion/demos/115-marquee-tape/NOTES.md"><b>115</b> 취급주의, 오늘의 주인공</a><br><sub>흐르는 글자 띠 · 무한 마키 테이프</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/137-pen-write-on/NOTES.md"><img src="skills/aimotion/demos/137-pen-write-on/out/poster.jpg" width="140" alt="137 펜으로 쓴 안부"></a><br><a href="skills/aimotion/demos/137-pen-write-on/NOTES.md"><b>137</b> 펜으로 쓴 안부</a><br><sub>손글씨 쓰기 · 글리프 골격화 + 획 순서 + 납작펜 굵기</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/138-variety-captions/NOTES.md"><img src="skills/aimotion/demos/138-variety-captions/out/poster.jpg" width="140" alt="138 라면 물 조절 실패"></a><br><a href="skills/aimotion/demos/138-variety-captions/NOTES.md"><b>138</b> 라면 물 조절 실패</a><br><sub>예능 자막 · 겹 테두리 + 튀어나오기 + 화자 색 + 상황 자막</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/139-text-behind/NOTES.md"><img src="skills/aimotion/demos/139-text-behind/out/poster.jpg" width="140" alt="139 구름 위 봉우리"></a><br><a href="skills/aimotion/demos/139-text-behind/NOTES.md"><b>139</b> 구름 위 봉우리</a><br><sub>글자 뒤 피사체 · 깊이 사이에 끼운 제목 + 매트 + 깊이 안개</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/140-end-credits/NOTES.md"><img src="skills/aimotion/demos/140-end-credits/out/poster.jpg" width="140" alt="140 빈 의자"></a><br><a href="skills/aimotion/demos/140-end-credits/NOTES.md"><b>140</b> 빈 의자</a><br><sub>엔딩 크레딧 · 가운데 거터 정렬 + 일정 속도 스크롤 + 크레딧 스퀴즈</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/142-optical-kerning/NOTES.md"><img src="skills/aimotion/demos/142-optical-kerning/out/poster.jpg" width="140" alt="142 글자 사이의 공기"></a><br><a href="skills/aimotion/demos/142-optical-kerning/NOTES.md"><b>142</b> 글자 사이의 공기</a><br><sub>광학 자간 · 글자 사이 면적을 고르게 맞추기</sub></td>
 </tr>
 </table>
 
-### 모션그래픽 디자인 · 116–125
+### 모션그래픽 디자인 · 14편
 
-로고 리빌, 메타볼, 아이소메트릭 설명, 앱 소개, 방송 그래픽, 지도 경로 — 모션 디자인의 단골 장면
+로고 리빌, 아이소메트릭 설명, 앱 소개, 방송 그래픽, 지도 경로, 아이소타입 통계, 연표, 퀴즈, 메신저 대화 — 모션 디자인의 단골 장면
 
 <table>
 <tr>
@@ -343,6 +363,12 @@ CSS @keyframes, SVG SMIL, 스크롤 기반 애니메이션
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/123-lower-thirds/NOTES.md"><img src="skills/aimotion/demos/123-lower-thirds/out/poster.jpg" width="140" alt="123 모퉁이 라이브"></a><br><a href="skills/aimotion/demos/123-lower-thirds/NOTES.md"><b>123</b> 모퉁이 라이브</a><br><sub>방송 그래픽 패키지 · 로어서드 · 티커 · 버그 · 스팅어</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/124-shape-mascot/NOTES.md"><img src="skills/aimotion/demos/124-shape-mascot/out/poster.jpg" width="140" alt="124 네모, 무게를 싣다"></a><br><a href="skills/aimotion/demos/124-shape-mascot/NOTES.md"><b>124</b> 네모, 무게를 싣다</a><br><sub>도형 마스코트 · 애니메이션 원칙과 스미어 프레임</sub></td>
 <td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/125-route-map/NOTES.md"><img src="skills/aimotion/demos/125-route-map/out/poster.jpg" width="140" alt="125 바람섬 사흘 걷기"></a><br><a href="skills/aimotion/demos/125-route-map/NOTES.md"><b>125</b> 바람섬 사흘 걷기</a><br><sub>지도 경로 모션 · 가상의 섬 위의 여정</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/126-isotype/NOTES.md"><img src="skills/aimotion/demos/126-isotype/out/poster.jpg" width="140" alt="126 출근길 100명"></a><br><a href="skills/aimotion/demos/126-isotype/NOTES.md"><b>126</b> 출근길 100명</a><br><sub>아이소타입 통계 · 반복 아이콘 + 격자→무리 재배치</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/129-timeline/NOTES.md"><img src="skills/aimotion/demos/129-timeline/out/poster.jpg" width="140" alt="129 개업"></a><br><a href="skills/aimotion/demos/129-timeline/NOTES.md"><b>129</b> 개업</a><br><sub>타임라인 · 비선형 시간 축 + 카메라 추적 + 연도 카운터</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/130-quiz-countdown/NOTES.md"><img src="skills/aimotion/demos/130-quiz-countdown/out/poster.jpg" width="140" alt="130 다음 숫자는?"></a><br><a href="skills/aimotion/demos/130-quiz-countdown/NOTES.md"><b>130</b> 다음 숫자는?</a><br><sub>퀴즈 연출 · 카운트다운 링 + 긴장 리듬 + 정답 공개</sub></td>
+<td align="center" valign="top" width="20%"><a href="skills/aimotion/demos/135-chat-thread/NOTES.md"><img src="skills/aimotion/demos/135-chat-thread/out/poster.jpg" width="140" alt="135 오늘 저녁 뭐 먹지"></a><br><a href="skills/aimotion/demos/135-chat-thread/NOTES.md"><b>135</b> 오늘 저녁 뭐 먹지</a><br><sub>메신저 대화 장면 · 말풍선 레이아웃 + 스프링 스크롤 + 입력 중 표시</sub></td>
 </tr>
 </table>
 

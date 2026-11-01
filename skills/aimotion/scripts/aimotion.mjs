@@ -57,7 +57,7 @@ const commands = {
     console.log(`# 가장 중요한 규칙: ${principle}`);
     for (const g of groups) {
       console.log(`\n## ${g.name} — ${g.description}`);
-      for (const d of demos.filter((x) => x.number >= g.from && x.number <= g.to)) console.log(line(d));
+      for (const d of demos.filter((x) => x.group === g.name)) console.log(line(d));
     }
   },
   show() {
