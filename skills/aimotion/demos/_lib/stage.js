@@ -96,14 +96,19 @@ export function replay({ dt, every = 60, init, step, save, load }) {
 
 export function defineDemo(spec) {
   const { id, title, tech, duration, fps = 30, background = '#000', label = true } = spec;
-  document.documentElement.style.background = '#000';
-  document.body.style.cssText = 'margin:0;overflow:hidden;background:#000';
+  document.documentElement.style.cssText = 'background:#000;overflow:hidden';
+  document.body.style.cssText = 'margin:0;overflow:hidden;background:#000;touch-action:manipulation';
+  // the stage sits in a fixed, clipping frame the size of the screen: its unscaled 1080×1920 box must never widen the
+  // page, or a phone lays the page out wider than its screen and the stage is fitted to that, oversized and off-centre
+  const view = document.createElement('div');
+  view.style.cssText = 'position:fixed;inset:0;overflow:hidden';
   const stage = document.createElement('div');
   stage.id = 'stage';
   stage.style.cssText = `position:absolute;left:50%;top:50%;width:${W}px;height:${H}px;overflow:hidden;background:${background};transform-origin:50% 50%`;
-  document.body.appendChild(stage);
+  view.appendChild(stage);
+  document.body.appendChild(view);
   const fit = () => {
-    const s = Math.min(innerWidth / W, innerHeight / H);
+    const s = Math.min(view.clientWidth / W, view.clientHeight / H);
     stage.style.transform = `translate(-50%,-50%) scale(${s})`;
   };
   fit();
@@ -188,6 +193,7 @@ export function defineDemo(spec) {
  * viewer can judge real-time performance on their own GPU.
  *   Space / click on the picture: play/pause · ←/→ ±0.5 s (Shift ±2 s) · , . one frame (paused) ·
  *   Home: start · H: hide/show the bar
+ * On a touch screen a tap while the bar is hidden only brings it back; the next tap plays/pauses.
  */
 function createPlayer({ title, duration, fps, drawNow, getT, stats, spec }) {
   // transport events for demos with media that runs on its own clock (Web Audio): spec.onTransport({ playing, t })
@@ -195,7 +201,7 @@ function createPlayer({ title, duration, fps, drawNow, getT, stats, spec }) {
   const transport = (playing, at) => { try { spec.onTransport && spec.onTransport({ playing, t: at }); } catch (e) { console.error(e); } };
   const css = document.createElement('style');
   css.textContent = `
-    .dp-bar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(560px,calc(100vw - 32px));z-index:10;
+    .dp-bar{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(560px,calc(100vw - 32px));z-index:10;box-sizing:border-box;
       display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:rgba(14,15,20,.78);
       backdrop-filter:blur(10px);color:#e9ecf2;font:13px/1 "Pretendard Variable",system-ui,sans-serif;
       font-variant-numeric:tabular-nums;transition:opacity .3s;user-select:none}
@@ -208,7 +214,9 @@ function createPlayer({ title, duration, fps, drawNow, getT, stats, spec }) {
     .dp-fps{min-width:118px;color:#9aa0ab;text-align:right}
     .dp-msg{position:fixed;inset:0;display:grid;place-items:center;z-index:11;color:#cfd5df;padding:24px;text-align:center;
       font:15px/1.6 "Pretendard Variable",system-ui,sans-serif;pointer-events:none;white-space:pre-wrap}
-    .dp-msg.dp-err{color:#ff9a9a;font-family:ui-monospace,monospace;font-size:12px;text-align:left}`;
+    .dp-msg.dp-err{color:#ff9a9a;font-family:ui-monospace,monospace;font-size:12px;text-align:left}
+    @media (max-width:520px){.dp-fps{display:none}.dp-time{min-width:0}}
+    @media (pointer:coarse){.dp-bar button{width:40px;height:40px}.dp-bar{gap:12px;padding:8px 12px}}`;
   document.head.appendChild(css);
   const msg = document.createElement('div');
   msg.className = 'dp-msg';
@@ -286,7 +294,10 @@ function createPlayer({ title, duration, fps, drawNow, getT, stats, spec }) {
       playBtn.addEventListener('click', () => setPlaying(!playing));
       seekEl.addEventListener('input', () => jump(Number(seekEl.value)));
       seekEl.addEventListener('change', () => seekEl.blur());   // arrow keys then go to the player, not the slider
-      addEventListener('click', () => setPlaying(!playing));
+      // a touch that finds the bar hidden only wakes it; otherwise a tap or click on the picture plays/pauses
+      let swallow = false;
+      addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse' && bar.classList.contains('dp-hide') && !pinned) swallow = true; wake(); });
+      addEventListener('click', () => { if (swallow) { swallow = false; return; } setPlaying(!playing); });
       addEventListener('mousemove', wake);
       addEventListener('keydown', (e) => {
         const step = e.shiftKey ? 2 : 0.5;

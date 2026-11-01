@@ -42,17 +42,19 @@ const commands = {
     if (!ranked.length) die(`"${args.join(' ')}"에 맞는 데모가 없다. 다른 말로 찾거나 list로 전체를 본다.`);
     for (const { d } of ranked) {
       console.log(`\n${line(d)}\n  분류: ${d.group}`);
-      if (d.scene) console.log(`  데모 장면: ${d.scene}`);
+      if (d.scene) console.log(`  데모 장면(예시, 옮기지 않음): ${d.scene}`);
       if (d.points.length) console.log(`  배울 점: ${d.points.join(' · ')}`);
       console.log(`  라이브러리: ${d.libraries.join(', ') || '없음 (브라우저 기능만)'}`);
       for (const c of d.cautions) console.log(`  영상: ${c}`);
       console.log(`  폴더: ${path.join(DEMOS, d.id)}`);
       if (d.poster) console.log(`  그림: ${path.join(DEMOS, d.id, 'out', 'poster.jpg')}`);
     }
-    console.log(`\n다음: node ${path.basename(process.argv[1])} show <id> --notes`);
+    console.log(`\n"데모 장면"은 기법을 보여 준 예다. 영상에는 기술만 옮기고, 장면은 영상의 대본으로 새로 짓는다.`);
+    console.log(`다음: node ${path.basename(process.argv[1])} show <id> --notes`);
   },
   list() {
-    const { demos, groups } = index();
+    const { demos, groups, principle } = index();
+    console.log(`# 가장 중요한 규칙: ${principle}`);
     for (const g of groups) {
       console.log(`\n## ${g.name} — ${g.description}`);
       for (const d of demos.filter((x) => x.number >= g.from && x.number <= g.to)) console.log(line(d));
@@ -61,7 +63,9 @@ const commands = {
   show() {
     const d = needDemo();
     const dir = path.join(DEMOS, d.id);
-    const out = [`# ${line(d)}`, `# 원칙: ${index().principle}`, `# 폴더: ${dir} (공통 코드 ../_lib/: ${path.join(DEMOS, '_lib')})`, ''];
+    const out = [`# ${line(d)}`, `# 가장 중요한 규칙: ${index().principle}`,
+      '# 노트의 "화면"은 이 데모가 그린 것이다. 기법을 보여 준 예일 뿐, 영상에 옮기지 않는다.',
+      `# 폴더: ${dir} (공통 코드 ../_lib/: ${path.join(DEMOS, '_lib')})`, ''];
     const both = !flags.has('--notes') && !flags.has('--code');
     if (both || flags.has('--notes')) out.push(dump('NOTES.md', read(path.join(dir, 'NOTES.md'))));
     if (both || flags.has('--code')) for (const f of d.files) out.push(dump(f, read(path.join(dir, f))));
@@ -72,6 +76,7 @@ const commands = {
     const dir = path.join(DEMOS, d.id);
     console.log(dir);
     for (const f of ['NOTES.md', ...d.files, ...(d.poster ? ['out/poster.jpg'] : []), ...(d.sheet ? ['out/sheet.jpg'] : [])]) console.log(`  ${f}`);
+    console.log(`# 가장 중요한 규칙: ${index().principle}`);
   },
   common() {
     const lib = path.join(DEMOS, '_lib');

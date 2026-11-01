@@ -11,18 +11,18 @@
 Claude Code 플러그인으로:
 
 ```bash
-claude plugin marketplace add cokacdir/aimotion
+claude plugin marketplace add kstost/cokacmotion
 claude plugin install aimotion@aimotion
 ```
 
-Claude Code 안에서는 `/plugin marketplace add cokacdir/aimotion`, `/plugin install aimotion@aimotion`.
+Claude Code 안에서는 `/plugin marketplace add kstost/cokacmotion`, `/plugin install aimotion@aimotion`.
 새 버전은 `claude plugin marketplace update aimotion` 뒤 `claude plugin update aimotion@aimotion`.
 
 스킬 폴더에 직접 넣으려면:
 
 ```bash
-git clone --depth 1 https://github.com/cokacdir/aimotion.git
-mkdir -p ~/.claude/skills && cp -R aimotion/skills/aimotion ~/.claude/skills/
+git clone --depth 1 https://github.com/kstost/cokacmotion.git
+mkdir -p ~/.claude/skills && cp -R cokacmotion/skills/aimotion ~/.claude/skills/
 ```
 
 한 프로젝트에서만 쓰려면 그 프로젝트의 `.claude/skills/`에 복사한다. 새 버전은 다시 받아 덮어쓴다.
@@ -30,7 +30,7 @@ mkdir -p ~/.claude/skills && cp -R aimotion/skills/aimotion ~/.claude/skills/
 ## 쓰는 법
 
 설치하면 장면에 표현 기법이 필요할 때(예: "잉크가 번지는 전환", "자막을 더 살아 있게", "표현력 업그레이드") Claude가 스스로 이 스킬을 꺼내 쓴다.
-스킬은 목록에서 기법을 찾고, 그림으로 확인하고, 노트로 원리를 읽고, 필요한 소스만 본 뒤 작업 중인 영상의 코드로 다시 쓴다.
+스킬은 대본에 필요한 표현으로 기법을 찾고, 그림으로 확인하고, 노트와 소스를 충분히 읽어 원리를 이해한 뒤, 그 기술만 작업 중인 영상의 장면에 맞춰 다시 쓴다. 데모의 장면은 옮기지 않는다.
 
 찾기 스크립트(Node 18 이상, 의존성 없음)를 직접 써도 된다.
 
@@ -43,10 +43,11 @@ node $S path 103                # 폴더와 파일 (그림 포함)
 node $S common                  # 모든 데모가 부르는 공통 코드
 ```
 
-## 원칙: 기법만 가져간다
+## 원칙: 기술만 가져간다
 
-데모는 모두 세로 9:16(1080×1920), 10초 안팎, 화면 아래 자막이라는 같은 틀로 만들었다. 데모를 나란히 보여 주려고 정한 틀일 뿐이다.
-가져가는 것은 표현 기법과 기술적 내용이다. 비율·구도·길이·문구·색은 작업 중인 영상을 따른다.
+**데모가 표현한 내용은 그대로 가져가지 않는다.** 데모가 그린 소재·장면·이야기·구도·문구·색은 기법을 보여 주려고 고른 예일 뿐이다.
+가져가는 것은 기술, 곧 효과를 만드는 원리와 구현이다. 데모를 충분히 읽어 원리를 이해한 뒤, 장면은 작업 중인 영상의 대본으로 새로 짓는다.
+데모는 모두 세로 9:16(1080×1920), 10초 안팎, 화면 아래 자막이라는 같은 틀로 만들었다. 이 틀도 가져가지 않는다. 비율·길이·자막은 작업 중인 영상을 따른다.
 모든 데모는 시각 t의 순수 함수로 그린다. 어느 시각으로 옮겨도 같은 그림이 나와서 프레임 단위 영상 렌더에 그대로 맞는다.
 
 ## 구성
@@ -54,7 +55,7 @@ node $S common                  # 모든 데모가 부르는 공통 코드
 ```
 .claude-plugin/            플러그인·마켓플레이스 정의
 skills/aimotion/
-  SKILL.md                 스킬 안내: 원칙, 쓰는 법, 영상에 옮길 때
+  SKILL.md                 스킬 안내: 가장 중요한 규칙, 쓰는 법, 영상에 옮길 때
   INDEX.md                 데모 목록: 분류별, 편마다 데모 장면·배울 점·라이브러리·영상 주의
   index.json               같은 목록 (스크립트가 읽음)
   scripts/aimotion.mjs     찾기·보기 스크립트

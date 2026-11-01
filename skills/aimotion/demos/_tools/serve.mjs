@@ -22,4 +22,5 @@ http.createServer((req, res) => {
       res.end(buf);
     });
   });
-}).listen(PORT, '0.0.0.0', () => console.log(`demos: http://localhost:${PORT}/`));
+// this computer only (loopback): other devices on the network cannot open it
+}).listen(PORT, 'localhost', () => console.log(`demos: http://localhost:${PORT}/`));

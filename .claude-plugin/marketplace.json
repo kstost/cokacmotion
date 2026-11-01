@@ -1,7 +1,7 @@
 {
   "name": "aimotion",
   "description": "aimotion — 웹 그래픽 표현 기법 데모 모음 스킬",
-  "owner": { "name": "cokacdir" },
+  "owner": { "name": "kstost" },
   "plugins": [
     {
       "name": "aimotion",
